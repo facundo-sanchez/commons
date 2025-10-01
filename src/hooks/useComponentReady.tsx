@@ -1,0 +1,1 @@
+import { useState, useEffect } from 'react';const useComponentReady = () => {  const [isReady, setIsReady] = useState(false);  useEffect(() => {    setIsReady(true);  }, []);  return { isReady };};export default useComponentReady;
