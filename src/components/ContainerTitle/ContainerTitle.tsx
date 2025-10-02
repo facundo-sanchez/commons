@@ -1,7 +1,6 @@
 import { useComponentReady } from '../../hooks';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-import './ContainerTitle.style.css';
-
+import '../../index.css'
 interface Props {
   title: string;
   subTitle?: string;
@@ -18,6 +17,7 @@ const ContainerTitle = ({ title, subTitle }: Props) => {
             style={{ color: !isReady ? 'transparent' : 'rgba(0, 0, 0, 0.88)' }}
           >
             {subTitle ? `${title?.trim()}:` : title?.trim()}
+            {subTitle}
           </span>
         </div>
       </div>

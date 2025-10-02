@@ -1,7 +1,6 @@
 import { Box, CircularProgress } from '@mui/material';
-import './Spinner.css';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-
+import '../../index.css'
 interface Props {
   styles?: React.CSSProperties;
   config?: object;

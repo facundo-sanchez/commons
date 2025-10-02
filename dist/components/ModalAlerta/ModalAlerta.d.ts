@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import './ModalAlerta.css';
+import '../../index.css';
 interface Props {
     title: string;
     open: boolean;

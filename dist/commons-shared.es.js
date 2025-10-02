@@ -1,4 +1,4 @@
-import ae, { useState as oe, useEffect as se } from "react";
+import ne, { useState as oe, useEffect as se } from "react";
 import { createTheme as ie, ThemeProvider as le, CssBaseline as ce, Modal as ue, Box as k, Typography as de, CircularProgress as fe } from "@mui/material";
 import { LoadingButton as me } from "@mui/lab";
 var j = { exports: {} }, T = {};
@@ -33,7 +33,7 @@ function pe() {
   }
   return T.Fragment = a, T.jsx = s, T.jsxs = s, T;
 }
-var _ = {};
+var v = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -44,7 +44,7 @@ var _ = {};
  * LICENSE file in the root directory of this source tree.
  */
 var W;
-function be() {
+function xe() {
   return W || (W = 1, process.env.NODE_ENV !== "production" && (function() {
     function t(e) {
       if (e == null) return null;
@@ -152,13 +152,13 @@ function be() {
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function P(e, r, n, i, b, f, O, w) {
+    function P(e, r, n, i, x, f, O, w) {
       return n = f.ref, e = {
         $$typeof: C,
         type: e,
         key: r,
         props: f,
-        _owner: b
+        _owner: x
       }, (n !== void 0 ? n : null) !== null ? Object.defineProperty(e, "ref", {
         enumerable: !1,
         get: g
@@ -184,7 +184,7 @@ function be() {
         value: w
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function h(e, r, n, i, b, f, O, w) {
+    function h(e, r, n, i, x, f, O, w) {
       var l = r.children;
       if (l !== void 0)
         if (i)
@@ -199,10 +199,10 @@ function be() {
         else E(l);
       if (M.call(r, "key")) {
         l = t(e);
-        var x = Object.keys(r).filter(function(ne) {
-          return ne !== "key";
+        var b = Object.keys(r).filter(function(ae) {
+          return ae !== "key";
         });
-        i = 0 < x.length ? "{key: someKey, " + x.join(": ..., ") + ": ...}" : "{key: someKey}", D[l + i] || (x = 0 < x.length ? "{" + x.join(": ..., ") + ": ...}" : "{}", console.error(
+        i = 0 < b.length ? "{key: someKey, " + b.join(": ..., ") + ": ...}" : "{key: someKey}", D[l + i] || (b = 0 < b.length ? "{" + b.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -211,7 +211,7 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`,
           i,
           l,
-          x,
+          b,
           l
         ), D[l + i] = !0);
       }
@@ -227,7 +227,7 @@ React keys must be passed directly to JSX without using spread:
         e,
         l,
         f,
-        b,
+        x,
         c(),
         n,
         O,
@@ -237,7 +237,7 @@ React keys must be passed directly to JSX without using spread:
     function E(e) {
       typeof e == "object" && e !== null && e.$$typeof === C && e._store && (e._store.validated = 1);
     }
-    var R = ae, C = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), A = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), Z = Symbol.for("react.suspense"), Q = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), ee = Symbol.for("react.activity"), re = Symbol.for("react.client.reference"), y = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, M = Object.prototype.hasOwnProperty, te = Array.isArray, S = console.createTask ? console.createTask : function() {
+    var R = ne, C = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), A = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), Z = Symbol.for("react.suspense"), Q = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), ee = Symbol.for("react.activity"), re = Symbol.for("react.client.reference"), y = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, M = Object.prototype.hasOwnProperty, te = Array.isArray, S = console.createTask ? console.createTask : function() {
       return null;
     };
     R = {
@@ -249,7 +249,7 @@ React keys must be passed directly to JSX without using spread:
       R,
       u
     )(), F = S(d(u)), D = {};
-    _.Fragment = A, _.jsx = function(e, r, n, i, b) {
+    v.Fragment = A, v.jsx = function(e, r, n, i, x) {
       var f = 1e4 > y.recentlyCreatedOwnerStacks++;
       return h(
         e,
@@ -257,11 +257,11 @@ React keys must be passed directly to JSX without using spread:
         n,
         !1,
         i,
-        b,
+        x,
         f ? Error("react-stack-top-frame") : Y,
         f ? S(d(e)) : F
       );
-    }, _.jsxs = function(e, r, n, i, b) {
+    }, v.jsxs = function(e, r, n, i, x) {
       var f = 1e4 > y.recentlyCreatedOwnerStacks++;
       return h(
         e,
@@ -269,18 +269,18 @@ React keys must be passed directly to JSX without using spread:
         n,
         !0,
         i,
-        b,
+        x,
         f ? Error("react-stack-top-frame") : Y,
         f ? S(d(e)) : F
       );
     };
-  })()), _;
+  })()), v;
 }
 var z;
-function xe() {
-  return z || (z = 1, process.env.NODE_ENV === "production" ? j.exports = pe() : j.exports = be()), j.exports;
+function be() {
+  return z || (z = 1, process.env.NODE_ENV === "production" ? j.exports = pe() : j.exports = xe()), j.exports;
 }
-var o = xe();
+var o = be();
 const ge = {
   components: {
     MuiBreadcrumbs: {
@@ -369,17 +369,15 @@ const ge = {
     }
   },
   ge
-), v = ({ children: t }) => /* @__PURE__ */ o.jsxs(le, { theme: Ee, children: [
+), _ = ({ children: t }) => /* @__PURE__ */ o.jsxs(le, { theme: Ee, children: [
   /* @__PURE__ */ o.jsx(ce, {}),
   t
-] }), Re = "_boton_g3916_49", Te = {
-  boton: Re
-}, U = () => {
+] }), U = () => {
   const [t, a] = oe(!1);
   return se(() => {
     a(!0);
   }, []), { isReady: t };
-}, je = ({
+}, _e = ({
   label: t,
   color: a,
   onClick: s,
@@ -391,7 +389,7 @@ const ge = {
   loading: g,
   ...P
 }) => {
-  const { isReady: h } = U(), E = () => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
+  const { isReady: h } = U(), E = () => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(
     me,
     {
       ...P,
@@ -399,7 +397,7 @@ const ge = {
       size: m || "small",
       type: c,
       onClick: s,
-      className: `${Te.boton}`,
+      className: "boton",
       color: a,
       disabled: d,
       style: p,
@@ -434,16 +432,19 @@ const ge = {
         return /* @__PURE__ */ o.jsx(E, {});
     }
   })();
-}, ke = ({ title: t, subTitle: a }) => {
+}, he = ({ title: t, subTitle: a }) => {
   const { isReady: s } = U();
-  return /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsx(
+  return /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsxs(
     "span",
     {
       style: { color: s ? "rgba(0, 0, 0, 0.88)" : "transparent" },
-      children: a ? `${t?.trim()}:` : t?.trim()
+      children: [
+        a ? `${t?.trim()}:` : t?.trim(),
+        a
+      ]
     }
   ) }) }) });
-}, Pe = ({
+}, je = ({
   title: t,
   open: a,
   width: s,
@@ -452,7 +453,7 @@ const ge = {
   centered: u,
   onClose: m,
   ...p
-}) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
+}) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(
   ue,
   {
     open: a,
@@ -505,12 +506,12 @@ const ge = {
       }
     )
   }
-) }), Ae = ({ styles: t, config: a }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(k, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(fe, { sx: a }) }) }), ye = ({ children: t, ...a }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container", ...a, children: t }) });
+) }), ke = ({ styles: t, config: a }) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(k, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(fe, { sx: a }) }) }), Pe = ({ children: t, ...a }) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx("div", { className: "container", ...a, children: t }) });
 export {
-  je as Boton,
-  ye as ContainerComponent,
-  ke as ContainerTitle,
-  Pe as ModalAlerta,
-  Ae as Spinner,
-  v as ThemeWrapper
+  _e as Boton,
+  Pe as ContainerComponent,
+  he as ContainerTitle,
+  je as ModalAlerta,
+  ke as Spinner,
+  _ as ThemeWrapper
 };

@@ -1,4 +1,5 @@
 import { type MouseEventHandler, type ReactElement } from 'react';
+import '../../index.css';
 interface Props {
     label: string;
     color?: 'inherit' | 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning';

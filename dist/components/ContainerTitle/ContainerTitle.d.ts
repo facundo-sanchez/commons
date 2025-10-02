@@ -1,4 +1,4 @@
-import './ContainerTitle.style.css';
+import '../../index.css';
 interface Props {
     title: string;
     subTitle?: string;

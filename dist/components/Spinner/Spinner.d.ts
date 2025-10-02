@@ -1,4 +1,4 @@
-import './Spinner.css';
+import '../../index.css';
 interface Props {
     styles?: React.CSSProperties;
     config?: object;
