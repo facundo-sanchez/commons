@@ -1,0 +1,1 @@
+import { type ReactNode } from 'react';import './ContainerComponent.style.css';interface Props {  children: ReactNode;  [key: string]: any;}const ContainerComponent = ({ children, ...rest }: Props) => {  return (    <div className="container" {...rest}>      {children}    </div>  );};export default ContainerComponent;

@@ -7,21 +7,24 @@
   "module": "./dist/commons-shared.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
-  ".": {
-    "import": "./dist/commons-shared.es.js",
-    "require": "./dist/commons-shared.cjs.js",
-    "types": "./dist/index.d.ts"
+    ".": {
+      "import": "./dist/commons-shared.es.js",
+      "require": "./dist/commons-shared.cjs.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist", "dist/*.css"],
+  "files": [
+    "dist",
+    "dist/*.css"
+  ],
   "style": "dist/style.css",
   "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/lab": "^5.0.0-alpha",
-    "@mui/material": "^5.18.0"
+    "@mui/material": "^5.18.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "scripts": {
     "dev": "vite",
@@ -48,6 +51,7 @@
     "jest-transform-stub": "^2.0.0",
     "prettier": "^3.6.2",
     "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "^6.0.1",
     "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "typescript": "~5.8.3",

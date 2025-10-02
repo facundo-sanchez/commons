@@ -1,5 +1,7 @@
+import ThemeWrapper from './components/Wrapper/ThemeWrapper';
 import Boton from './components/Boton/Boton';
 import ContainerTitle from './components/ContainerTitle/ContainerTitle';
 import ModalAlerta from './components/ModalAlerta/ModalAlerta';
 import Spinner from './components/Spinner/Spinner';
-export { Boton, ContainerTitle, ModalAlerta, Spinner };
+import ContainerComponent from './components/ContainerComponent/ContainerComponent';
+export { Boton, ContainerTitle, ModalAlerta, Spinner, ThemeWrapper, ContainerComponent, };
