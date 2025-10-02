@@ -20,10 +20,11 @@ export default defineConfig({
           'react-dom': 'ReactDOM',
           '@mui/material':'MaterialUI',
           '@emotion/react':'EmotionReact',
-          '@emotion/style':'EmotionStyle',
+          "@emotion/styled": "EmotionStyled",
           '@mui/lab':'MaterialUILab'
         },
       },
     },
+    cssCodeSplit: true,
   },
 });
