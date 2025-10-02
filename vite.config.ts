@@ -13,11 +13,15 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom','react-dom','@mui/material','@emotion/react','@emotion/styled','@mui/lab'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          '@mui/material':'MaterialUI',
+          '@emotion/react':'EmotionReact',
+          '@emotion/style':'EmotionStyle',
+          '@mui/lab':'MaterialUILab'
         },
       },
     },
