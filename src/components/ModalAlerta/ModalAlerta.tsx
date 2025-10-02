@@ -1,7 +1,8 @@
 import { Box, Modal, Typography } from '@mui/material';
 import { type ReactElement } from 'react';
+import './ModalAlerta.css';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-import '../../index.css'
+
 interface Props {
   title: string;
   open: boolean;

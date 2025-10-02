@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react';
+import './ContainerComponent.style.css';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-import '../../index.css'
+
 interface Props {
   children: ReactNode;
   [key: string]: any;
@@ -8,11 +9,11 @@ interface Props {
 
 const ContainerComponent = ({ children, ...rest }: Props) => {
   return (
-    <ThemeWrapper>
+       <ThemeWrapper>
       <div className="container" {...rest}>
         {children}
       </div>
-    </ThemeWrapper>
+       </ThemeWrapper>
   );
 };
 

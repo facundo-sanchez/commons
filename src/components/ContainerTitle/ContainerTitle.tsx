@@ -1,6 +1,7 @@
 import { useComponentReady } from '../../hooks';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-import '../../index.css'
+import './ContainerTitle.style.css';
+
 interface Props {
   title: string;
   subTitle?: string;

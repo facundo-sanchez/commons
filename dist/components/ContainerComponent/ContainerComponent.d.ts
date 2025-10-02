@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import '../../index.css';
+import './ContainerComponent.style.css';
 interface Props {
     children: ReactNode;
     [key: string]: any;

@@ -1,18 +1,18 @@
 import { LoadingButton } from '@mui/lab';
 import { type MouseEventHandler, type ReactElement } from 'react';
+import classes from './boton.module.css';
 import { useComponentReady } from '../../hooks';
-import ThemeWrapper from '../Wrapper/ThemeWrapper';
-import '../../index.css'
+import ThemeWrapper  from '../Wrapper/ThemeWrapper';
 interface Props {
   label: string;
   color?:
-    | 'inherit'
-    | 'primary'
-    | 'secondary'
-    | 'success'
-    | 'error'
-    | 'info'
-    | 'warning';
+  | 'inherit'
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'error'
+  | 'info'
+  | 'warning';
   disabled?: boolean;
   onClick?: MouseEventHandler;
   htmlType: 'button' | 'reset' | 'submit';
@@ -45,7 +45,7 @@ const Boton = ({
           size={size || 'small'}
           type={htmlType}
           onClick={onClick}
-          className={`boton`}
+          className={`${classes.boton}`}
           color={color}
           disabled={disabled}
           style={style}

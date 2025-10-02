@@ -1,4 +1,5 @@
-import ne, { useState as oe, useEffect as se } from "react";
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("._success_g3916_9{background-color:var(--success)!important}._success_g3916_9:hover{background-color:var(--success-hover)!important}._danger_g3916_17{background-color:var(--danger)!important}._danger_g3916_17:hover{background-color:var(--danger-hover)!important}._warning_g3916_25{background-color:var(--warning)!important}._warning_g3916_25:hover{background-color:var(--warning-hover)!important}._default_g3916_33{background-color:var(--default)!important}._default_g3916_33:disabled{background-color:var(--disabled)!important}._default_g3916_33:hover{background-color:var(--default-hover)!important}._disabled_g3916_45{background-color:var(--disabled)}._boton_g3916_49{color:#fff!important;min-width:100px;margin:.5em .5em .5em 0}._boton_g3916_49:disabled{opacity:.5!important;cursor:not-allowed!important;background-color:#afafaf!important}.container-title{display:flex;flex-direction:row;align-items:center;padding:.5em 0 .5em 3em;gap:.5em}.container-title .title{font-size:1.7rem;font-weight:700!important;display:flex;align-items:center;gap:.2em;text-wrap:nowrap}.container-title .sub-title{font-size:1.5rem;font-weight:500!important;color:#202f95;text-wrap:nowrap}.container-title .container-line .hr-title{margin-top:.3em;background-color:#afafaf;border-top:1px solid #afafaf;border-bottom:1px solid #afafaf;height:1px}.sub-title{display:flex;gap:1em;justify-content:center;align-items:center}.item-modal{height:1.6em;width:1.5em}.modal-alertas .modal-alertas-header{background-color:#121a52;border-radius:8px 8px 0 0!important}.modal-alertas .modal-alertas-title{font-size:26px!important;font-weight:400;color:#fff;padding:6px 0}.modal-alertas .modal-description{padding:0 16px}.modal-alertas .ant-modal-content{border-radius:10px}.modal-alertas .span{font-size:12px;color:#fff}.spinner{margin:auto;align-items:center;justify-content:center;padding:5em}.container{background-color:#fff;margin:1em 2em;padding:1.5em 1.5em .5em;border-radius:5px}@media only screen and (max-width: 600px){.user{display:none!important}}")),document.head.appendChild(a)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
+import ae, { useState as oe, useEffect as se } from "react";
 import { createTheme as ie, ThemeProvider as le, CssBaseline as ce, Modal as ue, Box as k, Typography as de, CircularProgress as fe } from "@mui/material";
 import { LoadingButton as me } from "@mui/lab";
 var j = { exports: {} }, T = {};
@@ -15,7 +16,7 @@ var B;
 function pe() {
   if (B) return T;
   B = 1;
-  var t = Symbol.for("react.transitional.element"), a = Symbol.for("react.fragment");
+  var t = Symbol.for("react.transitional.element"), n = Symbol.for("react.fragment");
   function s(d, c, u) {
     var m = null;
     if (u !== void 0 && (m = "" + u), c.key !== void 0 && (m = "" + c.key), "key" in c) {
@@ -31,9 +32,9 @@ function pe() {
       props: u
     };
   }
-  return T.Fragment = a, T.jsx = s, T.jsxs = s, T;
+  return T.Fragment = n, T.jsx = s, T.jsxs = s, T;
 }
-var v = {};
+var _ = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -44,7 +45,7 @@ var v = {};
  * LICENSE file in the root directory of this source tree.
  */
 var W;
-function xe() {
+function be() {
   return W || (W = 1, process.env.NODE_ENV !== "production" && (function() {
     function t(e) {
       if (e == null) return null;
@@ -89,24 +90,24 @@ function xe() {
         }
       return null;
     }
-    function a(e) {
+    function n(e) {
       return "" + e;
     }
     function s(e) {
       try {
-        a(e);
+        n(e);
         var r = !1;
       } catch {
         r = !0;
       }
       if (r) {
         r = console;
-        var n = r.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return n.call(
+        var a = r.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return a.call(
           r,
           "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
           i
-        ), a(e);
+        ), n(e);
       }
     }
     function d(e) {
@@ -135,14 +136,14 @@ function xe() {
       return e.key !== void 0;
     }
     function p(e, r) {
-      function n() {
+      function a() {
         $ || ($ = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           r
         ));
       }
-      n.isReactWarning = !0, Object.defineProperty(e, "key", {
-        get: n,
+      a.isReactWarning = !0, Object.defineProperty(e, "key", {
+        get: a,
         configurable: !0
       });
     }
@@ -152,14 +153,14 @@ function xe() {
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function P(e, r, n, i, x, f, O, w) {
-      return n = f.ref, e = {
+    function P(e, r, a, i, b, f, O, w) {
+      return a = f.ref, e = {
         $$typeof: C,
         type: e,
         key: r,
         props: f,
-        _owner: x
-      }, (n !== void 0 ? n : null) !== null ? Object.defineProperty(e, "ref", {
+        _owner: b
+      }, (a !== void 0 ? a : null) !== null ? Object.defineProperty(e, "ref", {
         enumerable: !1,
         get: g
       }) : Object.defineProperty(e, "ref", { enumerable: !1, value: null }), e._store = {}, Object.defineProperty(e._store, "validated", {
@@ -184,7 +185,7 @@ function xe() {
         value: w
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function h(e, r, n, i, x, f, O, w) {
+    function h(e, r, a, i, b, f, O, w) {
       var l = r.children;
       if (l !== void 0)
         if (i)
@@ -199,10 +200,10 @@ function xe() {
         else E(l);
       if (M.call(r, "key")) {
         l = t(e);
-        var b = Object.keys(r).filter(function(ae) {
-          return ae !== "key";
+        var x = Object.keys(r).filter(function(ne) {
+          return ne !== "key";
         });
-        i = 0 < b.length ? "{key: someKey, " + b.join(": ..., ") + ": ...}" : "{key: someKey}", D[l + i] || (b = 0 < b.length ? "{" + b.join(": ..., ") + ": ...}" : "{}", console.error(
+        i = 0 < x.length ? "{key: someKey, " + x.join(": ..., ") + ": ...}" : "{key: someKey}", D[l + i] || (x = 0 < x.length ? "{" + x.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -211,25 +212,25 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`,
           i,
           l,
-          b,
+          x,
           l
         ), D[l + i] = !0);
       }
-      if (l = null, n !== void 0 && (s(n), l = "" + n), m(r) && (s(r.key), l = "" + r.key), "key" in r) {
-        n = {};
+      if (l = null, a !== void 0 && (s(a), l = "" + a), m(r) && (s(r.key), l = "" + r.key), "key" in r) {
+        a = {};
         for (var N in r)
-          N !== "key" && (n[N] = r[N]);
-      } else n = r;
+          N !== "key" && (a[N] = r[N]);
+      } else a = r;
       return l && p(
-        n,
+        a,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
       ), P(
         e,
         l,
         f,
-        x,
+        b,
         c(),
-        n,
+        a,
         O,
         w
       );
@@ -237,7 +238,7 @@ React keys must be passed directly to JSX without using spread:
     function E(e) {
       typeof e == "object" && e !== null && e.$$typeof === C && e._store && (e._store.validated = 1);
     }
-    var R = ne, C = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), A = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), Z = Symbol.for("react.suspense"), Q = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), ee = Symbol.for("react.activity"), re = Symbol.for("react.client.reference"), y = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, M = Object.prototype.hasOwnProperty, te = Array.isArray, S = console.createTask ? console.createTask : function() {
+    var R = ae, C = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), A = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), Z = Symbol.for("react.suspense"), Q = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), ee = Symbol.for("react.activity"), re = Symbol.for("react.client.reference"), y = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, M = Object.prototype.hasOwnProperty, te = Array.isArray, S = console.createTask ? console.createTask : function() {
       return null;
     };
     R = {
@@ -249,38 +250,38 @@ React keys must be passed directly to JSX without using spread:
       R,
       u
     )(), F = S(d(u)), D = {};
-    v.Fragment = A, v.jsx = function(e, r, n, i, x) {
+    _.Fragment = A, _.jsx = function(e, r, a, i, b) {
       var f = 1e4 > y.recentlyCreatedOwnerStacks++;
       return h(
         e,
         r,
-        n,
+        a,
         !1,
         i,
-        x,
+        b,
         f ? Error("react-stack-top-frame") : Y,
         f ? S(d(e)) : F
       );
-    }, v.jsxs = function(e, r, n, i, x) {
+    }, _.jsxs = function(e, r, a, i, b) {
       var f = 1e4 > y.recentlyCreatedOwnerStacks++;
       return h(
         e,
         r,
-        n,
+        a,
         !0,
         i,
-        x,
+        b,
         f ? Error("react-stack-top-frame") : Y,
         f ? S(d(e)) : F
       );
     };
-  })()), v;
+  })()), _;
 }
 var z;
-function be() {
-  return z || (z = 1, process.env.NODE_ENV === "production" ? j.exports = pe() : j.exports = xe()), j.exports;
+function xe() {
+  return z || (z = 1, process.env.NODE_ENV === "production" ? j.exports = pe() : j.exports = be()), j.exports;
 }
-var o = be();
+var o = xe();
 const ge = {
   components: {
     MuiBreadcrumbs: {
@@ -294,9 +295,9 @@ const ge = {
         labelRowsPerPage: "Filas por página:",
         labelDisplayedRows: ({
           from: t,
-          to: a,
+          to: n,
           count: s
-        }) => `${t}–${a} de ${s !== -1 ? s : `más de ${a}`}`
+        }) => `${t}–${n} de ${s !== -1 ? s : `más de ${n}`}`
       }
     },
     MuiRating: {
@@ -322,7 +323,7 @@ const ge = {
     MuiPagination: {
       defaultProps: {
         "aria-label": "Paginador",
-        getItemAriaLabel: (t, a, s) => t === "page" ? `${s ? "" : "Ir a la "}página ${a}` : t === "first" ? "Ir a la primera página" : t === "last" ? "Ir a la última página" : t === "next" ? "Ir a la página siguiente" : "Ir a la página anterior"
+        getItemAriaLabel: (t, n, s) => t === "page" ? `${s ? "" : "Ir a la "}página ${n}` : t === "first" ? "Ir a la primera página" : t === "last" ? "Ir a la última página" : t === "next" ? "Ir a la página siguiente" : "Ir a la página anterior"
       }
     }
   }
@@ -369,17 +370,19 @@ const ge = {
     }
   },
   ge
-), _ = ({ children: t }) => /* @__PURE__ */ o.jsxs(le, { theme: Ee, children: [
+), v = ({ children: t }) => /* @__PURE__ */ o.jsxs(le, { theme: Ee, children: [
   /* @__PURE__ */ o.jsx(ce, {}),
   t
-] }), U = () => {
-  const [t, a] = oe(!1);
+] }), Re = "_boton_g3916_49", Te = {
+  boton: Re
+}, U = () => {
+  const [t, n] = oe(!1);
   return se(() => {
-    a(!0);
+    n(!0);
   }, []), { isReady: t };
-}, _e = ({
+}, je = ({
   label: t,
-  color: a,
+  color: n,
   onClick: s,
   disabled: d,
   htmlType: c,
@@ -389,7 +392,7 @@ const ge = {
   loading: g,
   ...P
 }) => {
-  const { isReady: h } = U(), E = () => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(
+  const { isReady: h } = U(), E = () => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
     me,
     {
       ...P,
@@ -397,8 +400,8 @@ const ge = {
       size: m || "small",
       type: c,
       onClick: s,
-      className: "boton",
-      color: a,
+      className: `${Te.boton}`,
+      color: n,
       disabled: d,
       style: p,
       endIcon: u,
@@ -422,7 +425,7 @@ const ge = {
     }
   ) });
   return h && (() => {
-    switch (a) {
+    switch (n) {
       case "success":
       case "error":
       case "warning":
@@ -432,31 +435,31 @@ const ge = {
         return /* @__PURE__ */ o.jsx(E, {});
     }
   })();
-}, he = ({ title: t, subTitle: a }) => {
+}, ke = ({ title: t, subTitle: n }) => {
   const { isReady: s } = U();
-  return /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsxs(
+  return /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsxs(
     "span",
     {
       style: { color: s ? "rgba(0, 0, 0, 0.88)" : "transparent" },
       children: [
-        a ? `${t?.trim()}:` : t?.trim(),
-        a
+        n ? `${t?.trim()}:` : t?.trim(),
+        n
       ]
     }
   ) }) }) });
-}, je = ({
+}, Pe = ({
   title: t,
-  open: a,
+  open: n,
   width: s,
   icon: d,
   children: c = !1,
   centered: u,
   onClose: m,
   ...p
-}) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(
+}) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
   ue,
   {
-    open: a,
+    open: n,
     onClose: m,
     "aria-labelledby": "modal-title",
     "aria-describedby": "modal-description",
@@ -506,12 +509,12 @@ const ge = {
       }
     )
   }
-) }), ke = ({ styles: t, config: a }) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx(k, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(fe, { sx: a }) }) }), Pe = ({ children: t, ...a }) => /* @__PURE__ */ o.jsx(_, { children: /* @__PURE__ */ o.jsx("div", { className: "container", ...a, children: t }) });
+) }), Ae = ({ styles: t, config: n }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(k, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(fe, { sx: n }) }) }), ye = ({ children: t, ...n }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container", ...n, children: t }) });
 export {
-  _e as Boton,
-  Pe as ContainerComponent,
-  he as ContainerTitle,
-  je as ModalAlerta,
-  ke as Spinner,
-  _ as ThemeWrapper
+  je as Boton,
+  ye as ContainerComponent,
+  ke as ContainerTitle,
+  Pe as ModalAlerta,
+  Ae as Spinner,
+  v as ThemeWrapper
 };
