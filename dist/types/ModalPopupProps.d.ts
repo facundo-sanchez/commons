@@ -7,5 +7,6 @@ export interface ModalPopupProps {
     centered?: boolean;
     children: React.ReactNode;
     onClose: () => void;
+    onExecuteCallback: () => void;
     [key: string]: unknown;
 }
