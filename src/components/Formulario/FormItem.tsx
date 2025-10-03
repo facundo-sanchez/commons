@@ -1,1 +1,13 @@
-import React, { type ReactNode } from 'react';import './Formulario.style.css';import type { FormItemProps } from '../../types/FormItemProps';const FormItem = ({ error, style = {}, children }: FormItemProps) => {  return (    <div className="d-flex container-form-item" style={{ ...style }}>      <div>{children}</div>      <div className="error-message">{error && <span>{error}</span>}</div>    </div>  );};export default FormItem;
+import './Formulario.style.css';
+import type { FormItemProps } from '../../types/FormItemProps';
+
+const FormItem = ({ error, style = {}, children }: FormItemProps) => {
+  return (
+    <div className="d-flex container-form-item" style={{ ...style }}>
+      <div>{children}</div>
+      <div className="error-message">{error && <span>{error}</span>}</div>
+    </div>
+  );
+};
+
+export default FormItem;

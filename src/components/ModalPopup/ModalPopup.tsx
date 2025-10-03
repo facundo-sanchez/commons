@@ -1,18 +1,9 @@
 import { Box, Modal, Typography } from '@mui/material';
-import { type ReactElement } from 'react';
 import './ModalPopup.css';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
-
-interface Props {
-  title: string;
-  open: boolean;
-  width?: number;
-  icon?: ReactElement;
-  centered?: boolean;
-  children: React.ReactNode;
-  onClose: () => void;
-  [key: string]: unknown;
-}
+import Flex from '../Flex/Flex';
+import Boton from '../Boton/Boton';
+import type { ModalPopupProps } from '../../types/ModalPopupProps';
 
 const ModalPopup = ({
   title,
@@ -22,8 +13,9 @@ const ModalPopup = ({
   children = false,
   centered,
   onClose,
+  onExecuteCallback,
   ...rest
-}: Props) => {
+}: ModalPopupProps) => {
   return (
     <ThemeWrapper>
       <Modal
@@ -67,6 +59,28 @@ const ModalPopup = ({
           </Box>
           <Box id="modal-description" className="modal-description">
             {children}
+            <Flex gap={3} sx={{ paddingBottom: '10px', marginTop: '0.5em' }} direction='row-reverse'>
+              <Boton
+                id="btn-aceptar"
+                data-testid="btn-aceptar"
+                htmlType="button"
+                label="Aceptar"
+                color="success"
+                onClick={() => {
+                  onClose();
+                  onExecuteCallback();
+                }}
+              />
+              <Boton
+                data-testid="btn-cancelar"
+                label="Cancelar"
+                htmlType="button"
+                color="error"
+                onClick={() => {
+                  onClose();
+                }}
+              />
+            </Flex>
           </Box>
         </Box>
       </Modal>
