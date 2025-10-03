@@ -1,0 +1,7 @@
+import type { ReactNode } from 'react';
+import type { FieldValues, SubmitHandler } from 'react-hook-form';
+export interface FormularioProps {
+    children: ReactNode;
+    methods: any;
+    onSubmit: SubmitHandler<FieldValues>;
+}

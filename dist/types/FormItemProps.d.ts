@@ -1,0 +1,6 @@
+import type { ReactNode } from 'react';
+export interface FormItemProps {
+    error: string | undefined | any;
+    style?: React.CSSProperties;
+    children: ReactNode;
+}

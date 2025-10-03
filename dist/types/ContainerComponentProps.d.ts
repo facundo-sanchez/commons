@@ -1,0 +1,5 @@
+import type { ReactNode } from 'react';
+export interface ContainerComponentProps {
+    children: ReactNode;
+    [key: string]: any;
+}

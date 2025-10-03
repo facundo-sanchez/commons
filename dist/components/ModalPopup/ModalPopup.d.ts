@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import './ModalAlerta.css';
+import './ModalPopup.css';
 interface Props {
     title: string;
     open: boolean;
@@ -10,5 +10,5 @@ interface Props {
     onClose: () => void;
     [key: string]: unknown;
 }
-declare const ModalAlerta: ({ title, open, width, icon: Icon, children, centered, onClose, ...rest }: Props) => import("react/jsx-runtime").JSX.Element;
-export default ModalAlerta;
+declare const ModalPopup: ({ title, open, width, icon: Icon, children, centered, onClose, ...rest }: Props) => import("react/jsx-runtime").JSX.Element;
+export default ModalPopup;

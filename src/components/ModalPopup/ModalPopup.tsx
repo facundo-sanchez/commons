@@ -1,6 +1,6 @@
 import { Box, Modal, Typography } from '@mui/material';
 import { type ReactElement } from 'react';
-import './ModalAlerta.css';
+import './ModalPopup.css';
 import ThemeWrapper from '../Wrapper/ThemeWrapper';
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
   [key: string]: unknown;
 }
 
-const ModalAlerta = ({
+const ModalPopup = ({
   title,
   open,
   width,
@@ -74,4 +74,4 @@ const ModalAlerta = ({
   );
 };
 
-export default ModalAlerta;
+export default ModalPopup;
