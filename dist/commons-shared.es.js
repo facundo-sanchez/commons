@@ -1,7 +1,8 @@
-import ae, { useState as ne, useEffect as oe } from "react";
-import { createTheme as se, ThemeProvider as ie, CssBaseline as le, Modal as ce, Box as j, Typography as ue, CircularProgress as de } from "@mui/material";
-import { LoadingButton as fe } from "@mui/lab";
-var h = { exports: {} }, T = {};
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("._success_g3916_9{background-color:var(--success)!important}._success_g3916_9:hover{background-color:var(--success-hover)!important}._danger_g3916_17{background-color:var(--danger)!important}._danger_g3916_17:hover{background-color:var(--danger-hover)!important}._warning_g3916_25{background-color:var(--warning)!important}._warning_g3916_25:hover{background-color:var(--warning-hover)!important}._default_g3916_33{background-color:var(--default)!important}._default_g3916_33:disabled{background-color:var(--disabled)!important}._default_g3916_33:hover{background-color:var(--default-hover)!important}._disabled_g3916_45{background-color:var(--disabled)}._boton_g3916_49{color:#fff!important;min-width:100px;margin:.5em .5em .5em 0}._boton_g3916_49:disabled{opacity:.5!important;cursor:not-allowed!important;background-color:#afafaf!important}.container-title{display:flex;flex-direction:row;align-items:center;padding:.5em 0 .5em 3em;gap:.5em}.container-title .title{font-size:1.7rem;font-weight:700!important;display:flex;align-items:center;gap:.2em;text-wrap:nowrap}.container-title .sub-title{font-size:1.5rem;font-weight:500!important;color:#202f95;text-wrap:nowrap}.container-title .container-line .hr-title{margin-top:.3em;background-color:#afafaf;border-top:1px solid #afafaf;border-bottom:1px solid #afafaf;height:1px}.sub-title{display:flex;gap:1em;justify-content:center;align-items:center}.item-modal{height:1.6em;width:1.5em}.modal-alertas .modal-alertas-header{background-color:#121a52;border-radius:8px 8px 0 0!important}.modal-alertas .modal-alertas-title{font-size:26px!important;font-weight:400;color:#fff;padding:6px 0}.modal-alertas .modal-description{padding:0 16px}.modal-alertas .ant-modal-content{border-radius:10px}.modal-alertas .span{font-size:12px;color:#fff}.spinner{margin:auto;align-items:center;justify-content:center;padding:5em}.container{background-color:#fff;margin:1em 2em;padding:1.5em 1.5em .5em;border-radius:5px}@media only screen and (max-width: 600px){.user{display:none!important}}")),document.head.appendChild(a)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
+import ae, { useState as oe, useEffect as se } from "react";
+import { createTheme as ie, ThemeProvider as le, CssBaseline as ce, Modal as ue, Box as k, Typography as de, CircularProgress as fe } from "@mui/material";
+import { LoadingButton as me } from "@mui/lab";
+var j = { exports: {} }, T = {};
 /**
  * @license React
  * react-jsx-runtime.production.js
@@ -11,10 +12,10 @@ var h = { exports: {} }, T = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var D;
-function me() {
-  if (D) return T;
-  D = 1;
+var B;
+function pe() {
+  if (B) return T;
+  B = 1;
   var t = Symbol.for("react.transitional.element"), n = Symbol.for("react.fragment");
   function s(d, c, u) {
     var m = null;
@@ -43,44 +44,44 @@ var _ = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var B;
-function pe() {
-  return B || (B = 1, process.env.NODE_ENV !== "production" && (function() {
+var W;
+function be() {
+  return W || (W = 1, process.env.NODE_ENV !== "production" && (function() {
     function t(e) {
       if (e == null) return null;
       if (typeof e == "function")
-        return e.$$typeof === ee ? null : e.displayName || e.name || null;
+        return e.$$typeof === re ? null : e.displayName || e.name || null;
       if (typeof e == "string") return e;
       switch (e) {
-        case P:
+        case A:
           return "Fragment";
-        case J:
+        case V:
           return "Profiler";
-        case q:
+        case J:
           return "StrictMode";
-        case H:
-          return "Suspense";
         case Z:
+          return "Suspense";
+        case Q:
           return "SuspenseList";
-        case K:
+        case ee:
           return "Activity";
       }
       if (typeof e == "object")
         switch (typeof e.tag == "number" && console.error(
           "Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."
         ), e.$$typeof) {
-          case U:
+          case q:
             return "Portal";
-          case G:
-            return (e.displayName || "Context") + ".Provider";
-          case V:
-            return (e._context.displayName || "Context") + ".Consumer";
           case X:
+            return (e.displayName || "Context") + ".Provider";
+          case G:
+            return (e._context.displayName || "Context") + ".Consumer";
+          case H:
             var r = e.render;
             return e = e.displayName, e || (e = r.displayName || r.name || "", e = e !== "" ? "ForwardRef(" + e + ")" : "ForwardRef"), e;
-          case Q:
+          case K:
             return r = e.displayName || null, r !== null ? r : t(e.type) || "Memo";
-          case C:
+          case I:
             r = e._payload, e = e._init;
             try {
               return t(e(r));
@@ -110,8 +111,8 @@ function pe() {
       }
     }
     function d(e) {
-      if (e === P) return "<>";
-      if (typeof e == "object" && e !== null && e.$$typeof === C)
+      if (e === A) return "<>";
+      if (typeof e == "object" && e !== null && e.$$typeof === I)
         return "<...>";
       try {
         var r = t(e);
@@ -121,14 +122,14 @@ function pe() {
       }
     }
     function c() {
-      var e = A.A;
+      var e = y.A;
       return e === null ? null : e.getOwner();
     }
     function u() {
       return Error("react-stack-top-frame");
     }
     function m(e) {
-      if (I.call(e, "key")) {
+      if (M.call(e, "key")) {
         var r = Object.getOwnPropertyDescriptor(e, "key").get;
         if (r && r.isReactWarning) return !1;
       }
@@ -136,7 +137,7 @@ function pe() {
     }
     function p(e, r) {
       function a() {
-        M || (M = !0, console.error(
+        $ || ($ = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           r
         ));
@@ -148,13 +149,13 @@ function pe() {
     }
     function g() {
       var e = t(this.type);
-      return $[e] || ($[e] = !0, console.error(
+      return L[e] || (L[e] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function k(e, r, a, i, b, f, S, O) {
+    function P(e, r, a, i, b, f, O, w) {
       return a = f.ref, e = {
-        $$typeof: N,
+        $$typeof: C,
         type: e,
         key: r,
         props: f,
@@ -176,19 +177,19 @@ function pe() {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: S
+        value: O
       }), Object.defineProperty(e, "_debugTask", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: O
+        value: w
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function v(e, r, a, i, b, f, S, O) {
+    function h(e, r, a, i, b, f, O, w) {
       var l = r.children;
       if (l !== void 0)
         if (i)
-          if (re(l)) {
+          if (te(l)) {
             for (i = 0; i < l.length; i++)
               E(l[i]);
             Object.freeze && Object.freeze(l);
@@ -197,12 +198,12 @@ function pe() {
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
         else E(l);
-      if (I.call(r, "key")) {
+      if (M.call(r, "key")) {
         l = t(e);
-        var x = Object.keys(r).filter(function(te) {
-          return te !== "key";
+        var x = Object.keys(r).filter(function(ne) {
+          return ne !== "key";
         });
-        i = 0 < x.length ? "{key: someKey, " + x.join(": ..., ") + ": ...}" : "{key: someKey}", F[l + i] || (x = 0 < x.length ? "{" + x.join(": ..., ") + ": ...}" : "{}", console.error(
+        i = 0 < x.length ? "{key: someKey, " + x.join(": ..., ") + ": ...}" : "{key: someKey}", D[l + i] || (x = 0 < x.length ? "{" + x.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -213,31 +214,31 @@ React keys must be passed directly to JSX without using spread:
           l,
           x,
           l
-        ), F[l + i] = !0);
+        ), D[l + i] = !0);
       }
       if (l = null, a !== void 0 && (s(a), l = "" + a), m(r) && (s(r.key), l = "" + r.key), "key" in r) {
         a = {};
-        for (var w in r)
-          w !== "key" && (a[w] = r[w]);
+        for (var N in r)
+          N !== "key" && (a[N] = r[N]);
       } else a = r;
       return l && p(
         a,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
-      ), k(
+      ), P(
         e,
         l,
         f,
         b,
         c(),
         a,
-        S,
-        O
+        O,
+        w
       );
     }
     function E(e) {
-      typeof e == "object" && e !== null && e.$$typeof === N && e._store && (e._store.validated = 1);
+      typeof e == "object" && e !== null && e.$$typeof === C && e._store && (e._store.validated = 1);
     }
-    var R = ae, N = Symbol.for("react.transitional.element"), U = Symbol.for("react.portal"), P = Symbol.for("react.fragment"), q = Symbol.for("react.strict_mode"), J = Symbol.for("react.profiler"), V = Symbol.for("react.consumer"), G = Symbol.for("react.context"), X = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), Z = Symbol.for("react.suspense_list"), Q = Symbol.for("react.memo"), C = Symbol.for("react.lazy"), K = Symbol.for("react.activity"), ee = Symbol.for("react.client.reference"), A = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, I = Object.prototype.hasOwnProperty, re = Array.isArray, y = console.createTask ? console.createTask : function() {
+    var R = ae, C = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), A = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), Z = Symbol.for("react.suspense"), Q = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), I = Symbol.for("react.lazy"), ee = Symbol.for("react.activity"), re = Symbol.for("react.client.reference"), y = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, M = Object.prototype.hasOwnProperty, te = Array.isArray, S = console.createTask ? console.createTask : function() {
       return null;
     };
     R = {
@@ -245,43 +246,43 @@ React keys must be passed directly to JSX without using spread:
         return e();
       }
     };
-    var M, $ = {}, L = R.react_stack_bottom_frame.bind(
+    var $, L = {}, Y = R.react_stack_bottom_frame.bind(
       R,
       u
-    )(), Y = y(d(u)), F = {};
-    _.Fragment = P, _.jsx = function(e, r, a, i, b) {
-      var f = 1e4 > A.recentlyCreatedOwnerStacks++;
-      return v(
+    )(), F = S(d(u)), D = {};
+    _.Fragment = A, _.jsx = function(e, r, a, i, b) {
+      var f = 1e4 > y.recentlyCreatedOwnerStacks++;
+      return h(
         e,
         r,
         a,
         !1,
         i,
         b,
-        f ? Error("react-stack-top-frame") : L,
-        f ? y(d(e)) : Y
+        f ? Error("react-stack-top-frame") : Y,
+        f ? S(d(e)) : F
       );
     }, _.jsxs = function(e, r, a, i, b) {
-      var f = 1e4 > A.recentlyCreatedOwnerStacks++;
-      return v(
+      var f = 1e4 > y.recentlyCreatedOwnerStacks++;
+      return h(
         e,
         r,
         a,
         !0,
         i,
         b,
-        f ? Error("react-stack-top-frame") : L,
-        f ? y(d(e)) : Y
+        f ? Error("react-stack-top-frame") : Y,
+        f ? S(d(e)) : F
       );
     };
   })()), _;
 }
-var W;
-function be() {
-  return W || (W = 1, process.env.NODE_ENV === "production" ? h.exports = me() : h.exports = pe()), h.exports;
+var z;
+function xe() {
+  return z || (z = 1, process.env.NODE_ENV === "production" ? j.exports = pe() : j.exports = be()), j.exports;
 }
-var o = be();
-const xe = {
+var o = xe();
+const ge = {
   components: {
     MuiBreadcrumbs: {
       defaultProps: {
@@ -326,7 +327,7 @@ const xe = {
       }
     }
   }
-}, ge = se(
+}, Ee = ie(
   {
     palette: {
       primary: {
@@ -368,15 +369,15 @@ const xe = {
       }
     }
   },
-  xe
-), Ee = ({ children: t }) => /* @__PURE__ */ o.jsxs(ie, { theme: ge, children: [
-  /* @__PURE__ */ o.jsx(le, {}),
+  ge
+), v = ({ children: t }) => /* @__PURE__ */ o.jsxs(le, { theme: Ee, children: [
+  /* @__PURE__ */ o.jsx(ce, {}),
   t
 ] }), Re = "_boton_g3916_49", Te = {
   boton: Re
-}, z = () => {
-  const [t, n] = ne(!1);
-  return oe(() => {
+}, U = () => {
+  const [t, n] = oe(!1);
+  return se(() => {
     n(!0);
   }, []), { isReady: t };
 }, je = ({
@@ -389,12 +390,12 @@ const xe = {
   size: m,
   style: p,
   loading: g,
-  ...k
+  ...P
 }) => {
-  const { isReady: v } = z(), E = () => /* @__PURE__ */ o.jsx(Ee, { children: /* @__PURE__ */ o.jsx(
-    fe,
+  const { isReady: h } = U(), E = () => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
+    me,
     {
-      ...k,
+      ...P,
       variant: "contained",
       size: m || "small",
       type: c,
@@ -423,7 +424,7 @@ const xe = {
       children: t
     }
   ) });
-  return v && (() => {
+  return h && (() => {
     switch (n) {
       case "success":
       case "error":
@@ -435,14 +436,17 @@ const xe = {
     }
   })();
 }, ke = ({ title: t, subTitle: n }) => {
-  const { isReady: s } = z();
-  return /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsx(
+  const { isReady: s } = U();
+  return /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container-title ", children: /* @__PURE__ */ o.jsx("div", { className: "title", children: /* @__PURE__ */ o.jsxs(
     "span",
     {
       style: { color: s ? "rgba(0, 0, 0, 0.88)" : "transparent" },
-      children: n ? `${t?.trim()}:` : t?.trim()
+      children: [
+        n ? `${t?.trim()}:` : t?.trim(),
+        n
+      ]
     }
-  ) }) });
+  ) }) }) });
 }, Pe = ({
   title: t,
   open: n,
@@ -452,8 +456,8 @@ const xe = {
   centered: u,
   onClose: m,
   ...p
-}) => /* @__PURE__ */ o.jsx(
-  ce,
+}) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(
+  ue,
   {
     open: n,
     onClose: m,
@@ -461,7 +465,7 @@ const xe = {
     "aria-describedby": "modal-description",
     ...p,
     children: /* @__PURE__ */ o.jsxs(
-      j,
+      k,
       {
         className: "modal-alertas",
         sx: {
@@ -478,7 +482,7 @@ const xe = {
         },
         children: [
           /* @__PURE__ */ o.jsxs(
-            j,
+            k,
             {
               display: "flex",
               justifyContent: "center",
@@ -488,7 +492,7 @@ const xe = {
               children: [
                 d != null && /* @__PURE__ */ o.jsx("div", { className: "item-modal", children: d }),
                 /* @__PURE__ */ o.jsx(
-                  ue,
+                  de,
                   {
                     id: "modal-title",
                     variant: "h6",
@@ -500,17 +504,17 @@ const xe = {
               ]
             }
           ),
-          /* @__PURE__ */ o.jsx(j, { id: "modal-description", className: "modal-description", children: c })
+          /* @__PURE__ */ o.jsx(k, { id: "modal-description", className: "modal-description", children: c })
         ]
       }
     )
   }
-), Ae = ({ styles: t, config: n }) => /* @__PURE__ */ o.jsx(j, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(de, { sx: n }) }), ye = ({ children: t, ...n }) => /* @__PURE__ */ o.jsx("div", { className: "container", ...n, children: t });
+) }), Ae = ({ styles: t, config: n }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx(k, { className: "d-flex spinner", style: t, children: /* @__PURE__ */ o.jsx(fe, { sx: n }) }) }), ye = ({ children: t, ...n }) => /* @__PURE__ */ o.jsx(v, { children: /* @__PURE__ */ o.jsx("div", { className: "container", ...n, children: t }) });
 export {
   je as Boton,
   ye as ContainerComponent,
   ke as ContainerTitle,
   Pe as ModalAlerta,
   Ae as Spinner,
-  Ee as ThemeWrapper
+  v as ThemeWrapper
 };
