@@ -26348,7 +26348,7 @@ const yo = ({ error: e, style: t = {}, children: o }) => /* @__PURE__ */ O.jsxs(
         }
       ) });
   }
-};
+}, rO = () => /* @__PURE__ */ O.jsx("div", { children: "Esto es un hola mundo" });
 export {
   Ys as Boton,
   eO as ContainerComponent,
@@ -26358,6 +26358,7 @@ export {
   oO as FormInput,
   yo as FormItem,
   tO as Formulario,
+  rO as HolaMundo,
   ZE as ModalPopup,
   JE as Spinner,
   Wo as ThemeWrapper
