@@ -25,16 +25,9 @@ import type { ContainerTitleProps } from './types/ContainerTitleProps';
 import type { FlexProps } from './types/FlexProps';
 import type { ModalPopupProps } from './types/ModalPopupProps';
 import type { SpinnerProps } from './types/SpinnerProps';
-<<<<<<< HEAD
 import type { FormItems } from './types/FormularioProps';
-=======
->>>>>>> ed76b412fdb5e2fc17dd75b4e19a72c570a3b09c
 /**
  * @Exports
 */
 export { HolaMundo, Boton, ContainerTitle, ModalPopup, Spinner, ThemeWrapper, ContainerComponent, Formulario, FormBoton, FormInput, FormItem, Flex, };
-<<<<<<< HEAD
 export type { FormularioProps, FormInputProps, FormItemProps, BotonProps, ContainerComponentProps, ContainerTitleProps, FlexProps, ModalPopupProps, SpinnerProps, FormItems };
-=======
-export type { FormularioProps, FormInputProps, FormItemProps, BotonProps, ContainerComponentProps, ContainerTitleProps, FlexProps, ModalPopupProps, SpinnerProps, };
->>>>>>> ed76b412fdb5e2fc17dd75b4e19a72c570a3b09c
