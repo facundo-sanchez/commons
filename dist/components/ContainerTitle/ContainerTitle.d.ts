@@ -1,7 +1,4 @@
+import type { ContainerTitleProps } from '../../types/ContainerTitleProps';
 import './ContainerTitle.style.css';
-interface Props {
-    title: string;
-    subTitle?: string;
-}
-declare const ContainerTitle: ({ title, subTitle }: Props) => import("react/jsx-runtime").JSX.Element;
+declare const ContainerTitle: ({ title, subTitle }: ContainerTitleProps) => import("react/jsx-runtime").JSX.Element;
 export default ContainerTitle;

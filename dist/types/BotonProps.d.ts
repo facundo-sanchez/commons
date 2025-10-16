@@ -1,0 +1,10 @@
+import type { ReactElement } from 'react';
+export interface BotonProps {
+    label: string;
+    icon?: ReactElement;
+    disabledBoton?: boolean;
+    htmlType: 'submit' | 'reset' | 'button';
+    styles?: React.CSSProperties;
+    type?: 'primary' | 'secondary' | 'cancel' | 'text';
+    [key: string]: any;
+}

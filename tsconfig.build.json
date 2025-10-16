@@ -10,7 +10,8 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "src/types.d.ts"]
+  "include": ["src", "src/types.d.ts"],
+  "exclude": ["node_modules", "src/main.tsx", "src/App.tsx","src/views"]
 }

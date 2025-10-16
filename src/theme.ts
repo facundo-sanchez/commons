@@ -1,0 +1,58 @@
+import { createTheme } from '@mui/material';
+import * as locales from '@mui/material/locale';
+
+export const theme = createTheme(
+  {
+    palette: {
+    primary: {
+      main: '#165C9D',
+      contrastText: '#ffffff',
+    },
+    secondary: {
+      main: '#E5EFFA',
+      dark:'#cadbecff',
+      contrastText: '#1A4A72',
+    },
+    action:{
+      disabled:'#fff'
+    }
+    },
+    components: {
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            '& .MuiInput-root': {
+              backgroundColor: '#f7f7f7',
+              paddingLeft: '10px',
+              borderRadius: '5px 5px 0px 0px',
+              marginTop: '5px',
+            },
+            '& .MuiInputLabel-root': {
+              backgroundColor: '#f7f7f7',
+              padding: '0 10px',
+              color: '#2e2e2e',
+              marginTop: '-10px',
+            },
+            '& .MuiFormLabel-root': {
+              zIndex: 4,
+            },
+            '& .MuiInputLabel-animated': {
+              zIndex: 4,
+              backgroundColor: 'transparent',
+            },
+          },
+        },
+      },
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            borderRadius: '10px',
+            textTransform: 'none',
+            fontWeight: 600,
+          },
+        },
+      },
+    },
+  },
+  locales.esES
+);

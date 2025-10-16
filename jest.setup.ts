@@ -1,1 +1,5 @@
-import ResizeObserver from 'resize-observer-polyfill';import 'intersection-observer';import '@testing-library/jest-dom';global.ResizeObserver = ResizeObserver;
+import ResizeObserver from 'resize-observer-polyfill';
+import 'intersection-observer';
+import '@testing-library/jest-dom';
+
+global.ResizeObserver = ResizeObserver;
